@@ -19,3 +19,16 @@ In a nuteshell, Hold My pet is a service that help's you find a Care Taker for y
 ### 📜 Licence
 
 The project is licenced under [MIT](/licence) licence
+
+### 💀 Structure
+
+```
+  - prisma
+    |-  schema.prisma
+  - views
+    |-  pets.ejs
+    |-  index.ejs
+    |-  create.ejs
+  - app.ts
+  
+```
