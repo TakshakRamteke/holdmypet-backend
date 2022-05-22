@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Pets</title>
+  </head>
+  <body style="background-color: whitesmoke">
+    <a href="/"><-Back</a>
+    <h1 style="margin-left: 0.5em">List of all the pets in Database</h1>
+    <ul
+      style="
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+      "
+    >
+      <%pets.map((pet)=>{%>
+      <li
+        style="
+          border: 1px solid black;
+          width: 20em;
+          margin: 1em 1em 1em 1em;
+          padding: 1em 1em 1em 1em;
+          border-radius: 5px;
+          box-shadow: 5px 5px black;
+          background-color: white;
+        "
+      >
+        <a href="/pets/<%= pet.id%>">Id: <%=pet.id%></a>
+        <h2><%= pet.name%></h2>
+        <p><%= pet.details%></p>
+        <p>Caretaker wanted : <%= pet.wantCareTaker? "Yes" : "No" %></p>
+        <p>Is Stray : <%= pet.isStray ? "Yes" : "No" %></p>
+      </li>
+      <%})%>
+    </ul>
+  </body>
+  <footer style="color: gray; margin-top: 4em; margin-left: 0.5em">
+    <note>To this data in json visit <a href="/pets-json">/pets-json</a></note>
+  </footer>
+</html>
