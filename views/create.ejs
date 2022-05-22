@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Pet</title>
+  </head>
+  <body  style="
+        background-color: whitesmoke;"">
+    <a href="/"><-Back</a>
+    <div
+      style="
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+      "
+    >
+      <form
+        style="
+          width: max-content;
+          height: max-content;
+          margin-left: 0.5em;
+          padding: 2em 2em 2em 2em;
+          border: 1px solid black;
+          border-radius: 5px;
+          box-shadow: 5px 5px black;
+          background-color: white;
+        "
+        action="/createPet"
+        method="post"
+      >
+        <label
+          >Name :
+          <input name="name" type="text" placeholder="Enter pet name" />
+        </label>
+        <br />
+        <br />
+        <label
+          >Details :
+          <input name="details" type="text" placeholder="Enter pet details" />
+        </label>
+        <br />
+        <br />
+        <label
+          >Looking for a Caretaker ? : No
+          <input name="isStray" type="radio" value="false" /> Yes<input
+            name="isStray"
+            type="radio"
+            value="true"
+          />
+        </label>
+        <br />
+        <br />
+        <label>
+          Is he/she a stray ? : No
+          <input name="isStray" type="radio" value="false" /> Yes<input
+            name="isStray"
+            type="radio"
+            value="true"
+          />
+        </label>
+        <br />
+        <br />
+        <label>
+          Please provide a URL to his/her picture :
+          <input
+            name="url"
+            type="url"
+            placeholder="Enter a url to pet's picture"
+          />
+        </label>
+        <br />
+        <br />
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  </body>
+</html>
