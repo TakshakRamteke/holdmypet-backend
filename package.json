@@ -1,0 +1,16 @@
+{
+  "name": "holdmypet-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TakshakRamteke/holdmypet-backend.git",
+  "author": "TakshakRamteke <takshakramteke0708@gmail.com>",
+  "license": "MIT",
+  "private": null,
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "prisma": "^3.14.0"
+  }
+}
